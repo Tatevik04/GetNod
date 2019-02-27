@@ -1,0 +1,18 @@
+a=int(input("Enter a: "))
+b=int(input("Enter b: "))
+while a<=0:
+    a=int(input("Enter a: "))
+    while b<=0:
+        b=int(input("Enter b: "))
+   
+        
+    
+def NOD (a,b):
+    while a !=0 and b !=0 :
+        if a>b:
+            a %= b
+        else:
+            b %= a
+    return a+b
+    
+print ("НОД равен", NOD(a,b))
